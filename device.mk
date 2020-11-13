@@ -38,8 +38,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_effects.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_effects.conf
 
 # Lights
-#PRODUCT_PACKAGES += \
-#    android.hardware.light@2.0-service.CPH1859
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-service.CPH1859
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
