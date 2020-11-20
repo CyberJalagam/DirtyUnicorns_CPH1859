@@ -24,9 +24,9 @@ VENDOR=oppo
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
-BLISS_ROOT="$MY_DIR"/../../..
+DU_ROOT="$MY_DIR"/../../..
 
-HELPER="$BLISS_ROOT"/vendor/bliss/build/tools/extract_utils.sh
+HELPER="$DU_ROOT"/vendor/du/build/tools/extract_utils.sh
 if [ ! -f "$HELPER" ]; then
     echo "Unable to find helper script at $HELPER"
 fi
@@ -54,7 +54,7 @@ if [ -z "$SRC" ]; then
 fi
 
 # Initialize the helper
-setup_vendor "$DEVICE" "$VENDOR" "$BLISS_ROOT" false "$CLEAN_VENDOR"
+setup_vendor "$DEVICE" "$VENDOR" "$DU_ROOT" false "$CLEAN_VENDOR"
 
 extract "$MY_DIR"/proprietary-files.txt "$SRC" "$SECTION"
 
