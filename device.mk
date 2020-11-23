@@ -79,13 +79,9 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.3-service.clearkey \
     android.hardware.drm@1.1-service.widevine
 
-# GCam Go
+# Camera
 PRODUCT_PACKAGES += \
-    GCam
-
-# Via
-PRODUCT_PACKAGES += \
-    Via
+    Snap
 
 # Removed Packages
 PRODUCT_PACKAGES += \
